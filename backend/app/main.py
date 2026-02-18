@@ -10,7 +10,8 @@ from datetime import datetime
 
 # Adding the ML-NIDS/src to path for imports
 current_dir = os.path.dirname(os.path.abspath(__file__))
-parent_dir = os.path.dirname(current_dir)
+backend_dir = os.path.dirname(current_dir)
+parent_dir = os.path.dirname(backend_dir)
 ml_nids_path = os.path.join(parent_dir, 'ML-NIDS')
 src_path = os.path.join(ml_nids_path, 'src')
 sys.path.insert(0, src_path)
