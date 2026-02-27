@@ -15,11 +15,11 @@ document
     resultContainer.classList.add("hidden");
     errorContainer.classList.add("hidden");
 
-    // Harvest form data
+    // The Harvest form data
     const formData = new FormData(e.target);
     const data = {};
     formData.forEach((value, key) => {
-      // Convert numbers
+      // Converting of numbers
       if (key === "Port" || key === "Payload_Size") {
         data[key] = parseInt(value, 10);
       } else {
